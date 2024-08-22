@@ -16,7 +16,7 @@ This project is a dynamic and responsive food delivery website built using React
 ## Note
 If you are accessing my website, please add the **Allow CORS: Access-Control-Allow-Origin** extension in your browser.
 
-![Extension_Link](output/extensionlink.jpg)
+![ExtensionLink](output/extensionlink.jpg)
 
 Press the link to download:
 [Allows:Cors](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
