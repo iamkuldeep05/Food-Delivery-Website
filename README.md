@@ -1,3 +1,11 @@
+Visit the Website :-
+
+
+Note : If you are accessing my website [https://tastzy-kuldeep-singhs-projects-375b7bdc.vercel.app//] . Please add <b> Allow CORS: Access-Control-Allow-Origin </b> this extension in your browser.
+
+<img src="output/extensionlink.jpg">
+
+
 # Food Ordering Application
 
 A modern food ordering application built using **ReactJS**, **Tailwind CSS**, and **Parcel.js**. The application integrates with live APIs to fetch real-time data, offering users a seamless experience for browsing and ordering food.
@@ -61,4 +69,5 @@ The application is deployed using Vercel. To deploy your own version:
 If you have any questions or feedback, feel free to reach out:
 
 Email: kuldeepsingh050600@gmail.com
+<br>
 GitHub: iamkuldeep05
