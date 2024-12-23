@@ -59,7 +59,7 @@ food-ordering/
 ├── tailwind.config.js      # Tailwind configuration
 ├── .parcel-cache/          # Parcel cache (generated)
 └── README.md               # Documentation
-
+```
 # Deployment
 
 The application is deployed using Vercel. To deploy your own version:
