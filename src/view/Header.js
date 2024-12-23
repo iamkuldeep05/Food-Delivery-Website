@@ -20,7 +20,7 @@ function Header() {
     <div style={{ display: "flex", padding: 0, margin: 0 }}>
       <img
         src={logo}
-        alt="BigCo Inc. logo"
+        alt="tastzy logo"
         style={{ width: "40px", height: "40px", objectFit:"cover",  margin: 0, borderRadius:"5%",marginRight:"0.5vw", }}
       />
     </div>

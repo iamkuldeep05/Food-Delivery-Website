@@ -9,7 +9,7 @@ function FoodCard(props) {
             <div className="text-card">
                 <h3 className='text-sm'>{info?.name}</h3>
                 {
-                    info?.veg ? <div>🟢</div> : <div></div>                    
+                    info?.veg ? <div>🍏</div> : <div></div>                    
                 }
                 <h1>{info?.avgRating}⭐</h1>
             </div>
