@@ -45,6 +45,7 @@ Follow these steps to set up the project locally:
     npm run build
     
 ## Folder Structure
+    ```bash
 food-ordering/
 ├── public/                 # Public assets
 ├── src/
