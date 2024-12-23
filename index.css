@@ -7,8 +7,11 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Montserrat;
+    font-weight: 600;
 }
+
 
 .header {
     display: flex;
@@ -58,6 +61,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .load-card{
     background: #f0f0f0;
@@ -97,6 +101,7 @@
     padding: 0px 16px 16px;
     border-bottom-left-radius: 36px;
     border-bottom-right-radius: 36px;
+    
 }
 
 .rest-detils-card{
@@ -133,7 +138,7 @@
     color: #000;
 }
 .food-link:hover{
-    color: #5f02eb;
+    color: #ff3f3f;
 }
 
 .active{

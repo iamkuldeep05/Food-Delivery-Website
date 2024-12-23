@@ -1,4 +1,3 @@
-import React from 'react'
 import { IMG_URL } from '../utils/constant'
 function FoodCard(props) {
     const { info } = props;
@@ -7,19 +6,16 @@ function FoodCard(props) {
             <div className="img">
                 <img src={IMG_URL + info?.cloudinaryImageId} alt="img" />
             </div>
-            <dir className="text-card">
+            <div className="text-card">
                 <h3 className='text-sm'>{info?.name}</h3>
                 {
-                    info?.veg ? <div>🍀</div> : <div></div>                    
+                    info?.veg ? <div>🟢</div> : <div></div>                    
                 }
-                <h1>{info?.avgRating}🌟</h1>
-            </dir>
+                <h1>{info?.avgRating}⭐</h1>
+            </div>
         </div>
     )
 }
-
-// High Order Components
-
 export const withPromoteData = (FoodCard) =>{
     return (props)=>{
         return(

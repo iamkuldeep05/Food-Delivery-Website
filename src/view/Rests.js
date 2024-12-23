@@ -9,7 +9,7 @@ export const Rests = () => {
     
     const { resId } = useParams();
     const [restsInfo, setRestsInfo] = useState([]);
-    const [itemClick, setItemClick] = useState(null);
+    const [itemClick, setItemClick] = useState(0);
 
     useEffect(() => {
         menuFetch();
@@ -36,15 +36,18 @@ export const Rests = () => {
 
     console.log(restsInfo)
     return restsInfo.length === 0 ? <Shimmer2 /> : (
-        <div style={{ backgroundImage: `url(${IMG_URL + cloudinaryImageId})` }} >
-            <div className="text-center w-7/12 m-auto bg-white p-4">
+        <div style={{
+            backgroundImage: `url(${IMG_URL + cloudinaryImageId})`,
+            // backgroundRepeat: "repeat-y", // Repeat the image only vertically           
+          }} >
+            <div className="text-center w-9/12 m-auto bg-white p-4">
                 <h2 className="text-3xl font-bold py-5 border-b-2 border-t-2 my-2 border-blue-400">{name}</h2>
                 <div className="flex justify-between my-2 border-b-slate-300">
                     <h3 className="font-semibold text-yellow-500">{avgRating}🌟</h3>
                     <h3 className="font-bold underline text-[#ff1c1c]">{cuisines.join(", ")}</h3>
                 </div>
                 <div className="py-3 border-b-4 border-b-slate-900 flex justify-center">
-                    <h1 className="font-extrabold p-2"> || Menu ||</h1>
+                    <h1 className="font-extrabold p-2 text-4xl"> Menu </h1>
 
                 </div>
                 <div>

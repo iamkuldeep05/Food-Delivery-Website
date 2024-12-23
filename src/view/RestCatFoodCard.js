@@ -45,12 +45,12 @@ function RestCatFoodCard({ data }) {
                         <p className='px-4 text-left text-xs'>{item.card.info.description}</p>
                         {/* {splitDescription(item.card.info.description)} */}
                         <div className='px-4 mt-2 flex'>
-                            <button className='p-2 mx-2 w-20 h-10 rounded-sm hover:bg-black hover:text-[#fff] border-black border-2' 
+                            <button className='p-2 mx-2 w-20 h-10 rounded-md hover:bg-black hover:text-[#fff] border-black border-2' 
                             // onClick={handleAddItems}
                             // onClick={handleAddItems(item)}
                             onClick={() => handleAddItems(item)}
                             >Add</button>
-                            <button className='p-2 w-20 h-10 rounded-sm hover:bg-black hover:text-[#fff] border-black border-2' 
+                            <button className='p-2 w-20 h-10 rounded-md hover:bg-black hover:text-[#fff] border-black border-2' 
                             // onClick={handleAddItems}
                             // onClick={handleAddItems(item)}
                             onClick={() => handleRemoveItems(item)}
@@ -60,7 +60,7 @@ function RestCatFoodCard({ data }) {
 
                     <img
                         src={IMG_URL + item.card.info.imageId}
-                        className='w-20 h-20 border-2 hover:h-36 hover:w-36 border-black object-cover rounded-sm shadow-2xl shadow-slate-500'
+                        className='w-20 h-20 border-2 hover:h-36 hover:w-36  border-black object-cover rounded-md shadow-2xl shadow-slate-500'
                         alt={item.card.info.name}
                     />
                 </div>
@@ -85,7 +85,7 @@ function RestCatFoodCard({ data }) {
                     <p className='text-left px-4'>{item?.card?.info?.ratings?.aggregatedRating?.rating}</p>
                     <p className='px-4 text-left'>{item.card.info.description}</p>
                     </div>
-                    <img src={IMG_URL + item.card.info.imageId} className='w-20 h-20 border-2 hover:h-36 hover:w-36 border-black object-cover rounded-sm shadow-2xl shadow-slate-500'/>
+                    <img src={IMG_URL + item.card.info.imageId} className='w-20 h-20 border-2 hover:h-36 hover:w-36 border-black object-cover rounded-md shadow-2xl shadow-slate-500'/>
                 </div>))}
         </div>
     )

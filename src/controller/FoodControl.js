@@ -9,12 +9,13 @@ import UserContext from "../context/UserContext.js";
 import {Provider} from 'react-redux';
 import foodStore from '../Redux/foodStore';
 import Cart from '../view/Cart.js';
+import { SearchTab } from '../view/SearchTab.js';
 
 export const FoodControl = () => {
 
     const data = useParams();
     // console.log(data);
-    const userName = "Shubham "
+    const userName = "Kuldeep  "
     return (
         
         <div className="app">
@@ -39,8 +40,8 @@ export const appRouter = createBrowserRouter([
                 path: '/',
                 element: <Container />
             }, {
-                path: '/about',
-                element: <About />
+                path: '/search',
+                element: <SearchTab />
             },{
             }, {
                 path: '/cart',

@@ -3,7 +3,7 @@ import RestCatFoodCard from "./RestCatFoodCard"
 //Controlled Component : Rest(parent component) can cantrolled this component. 
 function RestCategory({ data,itemClick,setItemClick }) {
     // console.log(data)
-    // const [itemClick, setItemClick] = useState(false);
+    // const [itemClick, setItemClick] = useState(0);
     const clickHandler = (e) => {
         console.log(e);
         setItemClick()
