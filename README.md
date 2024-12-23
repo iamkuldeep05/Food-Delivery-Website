@@ -1,9 +1,7 @@
 Visit the Website :-
 
 
-Note : If you are accessing my website [https://tastzy-kuldeep-singhs-projects-375b7bdc.vercel.app//] . Please add <b> Allow CORS: Access-Control-Allow-Origin </b> this extension in your browser.
-
-<img src="output/extensionlink.jpg">
+Note : If you are accessing my website [https://tastzy-kuldeep-singhs-projects-375b7bdc.vercel.app//] . 
 
 
 # Food Ordering Application
@@ -71,3 +69,8 @@ If you have any questions or feedback, feel free to reach out:
 Email: kuldeepsingh050600@gmail.com
 <br>
 GitHub: iamkuldeep05
+
+
+Please add <b> Allow CORS: Access-Control-Allow-Origin </b> this extension in your browser.
+
+<img src="output/extensionlink.jpg">
