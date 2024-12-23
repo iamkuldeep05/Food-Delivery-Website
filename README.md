@@ -44,22 +44,6 @@ Follow these steps to set up the project locally:
     ```bash
     npm run build
     
-## Folder Structure
-    ```bash
-food-ordering/
-├── public/                 # Public assets
-├── src/
-│   ├── components/         # Reusable React components
-│   ├── styles/             # Tailwind CSS styles
-│   ├── views/              # Page views
-│   ├── redux/              # Redux store and slices
-│   ├── images/             # Image assets
-│   └── App.js              # Main application component
-├── package.json            # Project metadata and scripts
-├── tailwind.config.js      # Tailwind configuration
-├── .parcel-cache/          # Parcel cache (generated)
-└── README.md               # Documentation
-```
 # Deployment
 
 The application is deployed using Vercel. To deploy your own version:
