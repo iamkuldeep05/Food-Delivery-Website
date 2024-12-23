@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import logo from "../../public/logo.png";
 
 function Header() {
   const [activeTab, setActiveTab] = useState("/");
@@ -14,12 +15,11 @@ function Header() {
 
   return (
     <div className="flex items-center top-0 sticky p-3 flex justify-between shadow-2xl bg-[#ffffff] mb-2">
-      {/* Logo and Brand Name */}
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
           <div style={{ display: "flex", padding: 0, margin: 0 }}>
             <img
-              src="/logo.png" // Correct reference to public folder
+              src={logo}
               alt="tastzy logo"
               style={{
                 width: "40px",
@@ -35,7 +35,6 @@ function Header() {
         </Link>
       </div>
 
-      {/* Navigation Links */}
       <div>
         <ul className="flex justify-between align-middle">
           <Link
@@ -56,8 +55,8 @@ function Header() {
           </Link>
           <Link
             className={`text-xl px-4 ${activeTab === "/help" ? "active" : ""}`}
-            to="/help"
-            onClick={() => handleTabClick("/help")}
+            to="/"
+            onClick={() => handleTabClick("/")}
           >
             Help
           </Link>
@@ -77,3 +76,32 @@ function Header() {
 }
 
 export default Header;
+
+// import React from 'react'
+// import {Link} from "react-router-dom"
+// function Header() {
+//     const [activeTab, setActiveTab] = useState('home');
+
+//     const handleTabClick = (tab) => {
+//         setActiveTab(tab);
+//       };
+
+//     return (
+//         <div className="header">
+//             <div className="logo-image">
+//                 <h1>FOA</h1>
+//             </div>
+
+//             <div className="nav-items">
+//                 <ul>
+//                     <Link className="li" to={"/"}>Home</Link>
+//                     <Link className="li" to={"/about"}>About Us</Link>
+//                     <Link className="li" to={"/contact"}>Contact Us</Link>
+//                     <Link className="li" to={"/"}>Cart</Link>
+//                 </ul>
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default Header
