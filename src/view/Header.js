@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import logo from "../../image/logo.png";
+import logo from "../../public/logo.png";
 
 function Header() {
   const [activeTab, setActiveTab] = useState("/");
@@ -16,17 +16,24 @@ function Header() {
   return (
     <div className="flex items-center top-0 sticky p-3 flex justify-between shadow-2xl bg-[#ffffff] mb-2">
       <div className="flex items-center">
-  <Link to="/" className="flex items-center">
-    <div style={{ display: "flex", padding: 0, margin: 0 }}>
-      <img
-        src={logo}
-        alt="tastzy logo"
-        style={{ width: "40px", height: "40px", objectFit:"cover",  margin: 0, borderRadius:"5%",marginRight:"0.5vw", }}
-      />
-    </div>
-    <h1 className="text-xl font-extrabold">Tastzy</h1>
-  </Link>
-</div>
+        <Link to="/" className="flex items-center">
+          <div style={{ display: "flex", padding: 0, margin: 0 }}>
+            <img
+              src={logo}
+              alt="tastzy logo"
+              style={{
+                width: "40px",
+                height: "40px",
+                objectFit: "cover",
+                margin: 0,
+                borderRadius: "5%",
+                marginRight: "0.5vw",
+              }}
+            />
+          </div>
+          <h1 className="text-xl font-extrabold">Tastzy</h1>
+        </Link>
+      </div>
 
       <div>
         <ul className="flex justify-between align-middle">
