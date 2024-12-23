@@ -12,9 +12,12 @@ const foodSlice = createSlice({
             state.foodList = action.payload;
         },
         searchItem: (state, action) => {
-            // Replace the existing searchList with the search results
+            console.log('Payload:', action.payload); // Log payload
             state.searchList = action.payload;
-        }
+            console.log('Updated searchList:', state.searchList); // Log updated state
+          }
+          
+        
     }
 });
 

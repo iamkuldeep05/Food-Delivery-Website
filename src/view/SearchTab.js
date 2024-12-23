@@ -6,9 +6,11 @@ export const SearchTab = () => {
   const [searchText, setSearchText] = useState(""); 
   const dispatch = useDispatch(); 
 
-  const { foodList } = useSelector((state) => ({
+  const { foodList, searchList } = useSelector((state) => ({
     foodList: state.food.foodList,
+    searchList: state.food.searchList,
   }));
+  console.log(foodList);
 
   const handleSearch = () => {
     const filteredFoodList = foodList.filter((food) =>
@@ -20,18 +22,46 @@ export const SearchTab = () => {
   const handleKeyPress = (event) => {
     if (event.code === "Enter") {
       console.log("Entered Press");
-      console.log(foodList)
       handleSearch();
     }
+  };
+
+  const SearchResults = () => {
+    return (
+      <div style={{ marginTop: "20px", width: "50%" }}>
+        {searchList.length > 0 ? (
+          searchList.map((food, index) => (
+            <div
+              key={index}
+              className="flex justify-between p-4 border rounded-lg shadow-lg mb-4 bg-white"
+            >
+              <div>
+                <h1 className="font-bold text-lg">{food.info?.name || "Unnamed Restaurant"}</h1>
+                <p className="text-sm text-gray-600">Category: {food.info?.category || "N/A"}</p>
+              </div>
+              <div className="text-right">
+                <p className="font-semibold text-green-600">
+                  ₹{food.info?.price ? food.info.price / 100 : "-"}
+                </p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-lg text-gray-600">No results found.</p>
+        )}
+      </div>
+    );
   };
 
   return (
     <div
       style={{
         display: "flex",
-        justifyContent: "center",
-        alignItems: "start",
+        flexDirection: "column",
+        alignItems: "center",
         height: "100vh",
+        paddingTop: "20px",
+        backgroundColor: "#f7f7f7",
       }}
     >
       <input 
@@ -48,6 +78,7 @@ export const SearchTab = () => {
         onChange={(e) => setSearchText(e.target.value)}
         onKeyDown={handleKeyPress}
       />
+      <SearchResults />
     </div>
   );
 };
